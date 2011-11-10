@@ -19,8 +19,8 @@ The apps so far are:
 ===============
 A pre-launch "coming soon" page in the vein of [these](http://sixrevisions.com/design-showcase-inspiration/25-beautiful-examples-of-coming-soon-pages/).
 
-Features
----------------
+__Features__
+
 * company name
 * logo
 * background image or style
