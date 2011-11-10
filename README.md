@@ -15,7 +15,7 @@ __NOTE: Just to be 100% clear, these are developed as I learn, they will have is
 
 The apps so far are:
 
-[Prelaunch](http://github/christiet/clone_project/prelaunch)
+[Prelaunch](http://github/christiet/clone/prelaunch)
 ===============
 A pre-launch "coming soon" page in the vein of [these](http://sixrevisions.com/design-showcase-inspiration/25-beautiful-examples-of-coming-soon-pages/).
 
