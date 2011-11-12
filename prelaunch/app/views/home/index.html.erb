@@ -13,11 +13,24 @@
     <div class = "three columns">
       <img id="logo" src="http://placehold.it/240x300">
     </div>
-    <div class = "eight columns">
-      <h1 id="company"><%= Prelaunch::Application.config.company %>
-      <h5 id="tagline"><%= Prelaunch::Application.config.tagline %>
+    <div class = "nine columns">
+      <h1 id="company"><%= Prelaunch::Application.config.company %></h1>
+      <h5 id="tagline"><%= Prelaunch::Application.config.tagline %></h5>
+      <div class = "row">
+        <p></p>
+      </div>
+      <div class = "row">
+        <strong>WANT TO KNOW THE NEWS AS IT HAPPENS?<strong>
+        <div class = "eight columns">
+          <form class = "nice">
+            <input id="email" placeholder="YOUR E-MAIL ADDRESS" type="text" class="large input-text" />
+          </form>
+        </div>
+        <div class = "four columns">
+          <a href="#" id="notify" class="nice small black button radius">Notify Me &raquo;</a>
+        </div>
+      </div>
     </div>
-    <div class = "one column" />
   </div>
 </div>
 

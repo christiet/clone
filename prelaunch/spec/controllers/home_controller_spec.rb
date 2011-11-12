@@ -37,9 +37,28 @@ describe HomeController do
       response.should have_selector("img#logo")
     end
 
-    #pending "should have an e-mail capture field"
+    it "should have an e-mail capture field" do
+      response.should have_selector("input#email")
+    end
 
-    #pending "should have a follow-us block"
+    it "should have an e-mail notify button" do
+      response.should have_selector("a#notify", :href => "#")
+    end
 
+    pending "should have a follow-us block" do
+
+    end
+
+  end
+
+  describe "should have a working notify button" do
+
+    pending "should validate an e-mail address" do
+
+    end
+
+    pending "should submit an e-mail address to campaign manager" do
+
+    end
   end  
 end

@@ -4,5 +4,5 @@
 # and doesn't need CRUD operations
 
 Prelaunch::Application.config.title = "Prelaunch"
-Prelaunch::Application.config.company = "Seven Brooms"
-Prelaunch::Application.config.tagline = "Extra thin brooms so you can do more tasks ..."
+Prelaunch::Application.config.company = "SEVEN BROOMS"
+Prelaunch::Application.config.tagline = "EXTRA THIN BROOMS SO YOU CAN DO MORE TASKS AT ONCE ..."
