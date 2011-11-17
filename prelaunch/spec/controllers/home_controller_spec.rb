@@ -42,7 +42,7 @@ describe HomeController do
     end
 
     it "has an e-mail notify button" do
-      page.should have_selector("a#notify", :href => "#")
+      page.should have_selector("input#notify", :href => "#")
     end
 
     describe "has a follow-us section" do
@@ -60,11 +60,15 @@ describe HomeController do
 
   describe "has a working notify button" do
 
-    pending "validates an e-mail address" do
-
+    it "submits a valid e-mail address" do
+      
     end
 
-    pending "submits an e-mail address to campaign manager" do
+    it "rejects an invalid e-mail address" do
+      
+    end
+
+    pending "submits a valid e-mail address to campaign manager" do
 
     end
   end  

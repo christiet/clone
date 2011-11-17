@@ -1,5 +1,7 @@
 Prelaunch::Application.routes.draw do
   get "home/index"
+  post "home/notify"
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

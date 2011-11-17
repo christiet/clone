@@ -21,24 +21,21 @@
       </div>
       <div class = "row">
         <strong>WANT TO KNOW THE NEWS AS IT HAPPENS?<strong>
-        <form class = "nice">
-          <div class = "eight columns">
-              <input id="email" placeholder="YOUR E-MAIL ADDRESS" type="text" class="large input-text" />
+        <div class = "eight columns">
+          <%= form_tag '/home/notify', :html => { :id => "email_form", :class => "nice"} do %>
+            <%= text_field_tag 'email', nil,  :placeholder => "YOUR E-MAIL ADDRESS", :type => :text, :class => "large input-text" %>
           </div>
           <div class = "four columns">
-            <a href="#" id="notify" class="nice small black button radius">Notify Me &raquo;</a>
+            <%= submit_tag "Notify Me", :id => "notify", :class => "nice small black button radius" %>
           </div>
-        </form>
-        </div class = "row">
-          <div id="follow" class = "eight columns" align="center">
-            <% Prelaunch::Application.config.social.each do |k, v| %>
+        <% end %>
+        <div id="follow" class = "eight columns" align="center">
+          <% Prelaunch::Application.config.social.each do |k, v| %>
             <a<%= " id='#{k}' href='#{v}'" %>><img <%= "src='/assets/#{k}.png'" %>></a>
-            <% end %>
-          </div>
-          <div class = "four columns" />
+          <% end %>
         </div>
+        <div class = "four columns" />
       </div>
     </div>
   </div>
 </div>
-
