@@ -14,6 +14,16 @@ __Features__
 * e-mail address collector (linking to MailChimp or Campaign Monitor)
 * various "follow-us" buttons to social network apps - dynamically created on options
 
+__Implementation__
+* Single form
+* ActiveRecord-less - uses ActiveModel
+* Uses /config/initializers/application_parameter.rb to define config.settings
+* Dynamically generates social links based on settings.
+
+__Notes__
+* Failing tests - due to a bug(?) in RSpec the submit valid / invalid e-mail tests fail; working on a solution.
+
+
 Credits
 ---------------
 Uses the awesome social media set from [Designmodo](http://designmodo.com/)
