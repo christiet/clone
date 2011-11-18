@@ -1,0 +1,6 @@
+<div id="follow" class = "eight columns" align="center">
+  <% Prelaunch::Application.config.social.each do |k, v| %>
+    <a<%= " id='#{k}' href='#{v}'" %>><img <%= "src='/assets/#{k}.png'" %>></a>
+  <% end %>
+</div>
+<div class = "four columns" />

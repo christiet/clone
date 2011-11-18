@@ -7,7 +7,11 @@ class Follower
 	
 	attr_accessor :email
 
-	validates :email, :email => true
+	validates :email, :presence => true, :email => true
+
+	def initialize (address=nil)
+		@email = address
+	end
 
 	def persisted?
 		false

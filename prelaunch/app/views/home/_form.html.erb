@@ -1,0 +1,8 @@
+  <div class = "eight columns">
+<%= form_for @follower, :url => home_notify_path, :html => { :id => "email_form", :class => "nice"} do |f| %>
+  	<%= f.text_field :email, :placeholder => "YOUR E-MAIL ADDRESS", :type => :text, :class => "large input-text" %>
+	</div>
+	<div class = "four columns">
+ 		<%= f.submit "Notify Me", :id => "notify", :class => "nice small black button radius" %>
+	</div>
+<% end %>
